@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Produtos</title>
+    <!-- Importação de CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Gerenciamento de Produtos</h1>
+        <nav>
+            <a href="index.html" class="btn">Início</a>
+            <a href="users.html" class="btn">Usuários</a>
+            <a href="products.html" class="btn">Produtos</a>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <h2>Adicionar Novo Produto</h2>
+        <form id="product-form" class="form-produto">
+            <input type="text" id="title" placeholder="Título do Produto" required />
+            <input type="number" id="price" placeholder="Preço (R$)" required />
+            <input type="text" id="brand" placeholder="Marca" required />
+            <input type="text" id="category" placeholder="Categoria" required />
+            <input type="url" id="thumbnail" placeholder="URL da Imagem (opcional)" />
+            <button type="submit">Adicionar Produto</button>
+        </form>
+        <!-- Caixa de sucesso -->
+        <div id="success-message" class="success-message" style="display: none;">
+             Produto adicionado com sucesso!
+        </div>
+   
+        <h2>Lista de Produtos</h2>
+        <div id="product-list">
+            <ul>
+                <!-- Os produtos serão listados dinamicamente aqui -->
+            </ul>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Gerenciamento de Produtos. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="products.js"></script>
+</body>
+</html>
